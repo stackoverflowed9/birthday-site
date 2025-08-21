@@ -153,3 +153,13 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+  .floating-img {
+    position: static;   /* no absolute */
+    width: 90%;         /* full width for phone */
+    margin: 10px auto;  /* center images */
+    display: block;
+    rotate: 0deg;       /* remove tilt for clean look */
+  }
+}
