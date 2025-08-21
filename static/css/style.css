@@ -5,13 +5,13 @@ body {
 }
 
 .greeting-page {
-    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
     color: white;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
 }
 
 .center-content {
@@ -34,10 +34,11 @@ body {
     background: #ff6f91;
     color: white;
 }
-
+         
 .collage-page {
-    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb, #fda085);
     background-attachment: fixed;
+    background-size: 200% 200%;
     padding: 20px;
     position: relative;
     overflow: hidden;
@@ -56,14 +57,7 @@ body {
     border: 4px solid white;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.floating-img:nth-child(odd) {
-    transform: rotate(-5deg);
-}
-
-.floating-img:nth-child(even) {
-    transform: rotate(5deg);
+    rotate: -10deg;
 }
 
 .floating-img:hover {
@@ -71,23 +65,19 @@ body {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
-.floating-img:nth-child(1) { top: 5%; left: 20%; }
-.floating-img:nth-child(2) { top: 10%; right: 24%; }
-.floating-img:nth-child(3) { top: 50%; left: 12%; }
-.floating-img:nth-child(4) { top: 45%; left: 30%; }
-.floating-img:nth-child(5) { top: 5%; left: 40%; scale:105%}
-.floating-img:nth-child(5):hover { scale:110% }
-.floating-img:nth-child(6) { bottom: 2%; right: 6%; }
-.floating-img:nth-child(7) { bottom: 10%; right:40%}
+.floating-img:nth-child(1) { top: 8%; left: 45%; }
+.floating-img:nth-child(2) { top: 5%; right: 12%; }
+.floating-img:nth-child(3) { top: 50%; left: 17%; }
+.floating-img:nth-child(4) { top: 13%; left: 14%; }
+.floating-img:nth-child(5) { top: 48%; left: 32%; scale:105%}
+.floating-img:nth-child(5):hover { scale:105% }
+.floating-img:nth-child(6) { bottom: 22%; right: 24%; }
+.floating-img:nth-child(7) { top:6%; right:27%}
+.floating-img:nth-child(8) { top: 10%; left:29%};
 
-.message-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #ffdde1);
-    text-align: center;
-    padding-top: 50px;
-}
 
 .message-header {
+    color: white;
     font-size: 24px;
     margin-bottom: 20px;
     color: #222;
@@ -96,7 +86,7 @@ body {
 .envelope {
     width: 150px;
     height: 100px;
-    background: pink;
+    background: rgb(255, 255, 255);
     margin: auto;
     border-radius: 5px;
     position: relative;

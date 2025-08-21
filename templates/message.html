@@ -5,34 +5,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
         <title>Special Message</title>
+        <style>
+            .message-body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(#f4c4f3,#fc67fa);
+                text-align: center;
+                padding-top: 50px;
+                background-size: 400% 400%;
+                animation: gradientMove 1s ease infinite;
+            }
+        </style>
+
     </head>
     <body class="message-body">
 
-    <h1 class="message-header">Something Special for You ❤️</h1>
+        <h1 class="message-header" style="color: white">Something Special for You &#128157;</h1>
 
-    <div class="envelope" id="envelope">
-        <div class="letter">
-            <svg class="heart" viewBox="0 0 200 200">
-                <path class="heart-left" d="M100,180 L20,100 C-20,60 20,0 80,40 C100,55 100,55 100,55 Z" fill="red"/>
-                <path class="heart-right" d="M100,180 L180,100 C220,60 180,0 120,40 C100,55 100,55 100,55 Z" fill="red"/>
-            </svg>
+        <div class="envelope" id="envelope">
+            <div class="letter">
+                <svg class="heart" viewBox="0 0 200 200">
+                    <path class="heart-left" d="M100,180 L20,100 C-20,60 20,0 80,40 C100,55 100,55 100,55 Z" fill="red"/>
+                    <path class="heart-right" d="M100,180 L180,100 C220,60 180,0 120,40 C100,55 100,55 100,55 Z" fill="red"/>
+                </svg>
+            </div>
         </div>
-    </div>
 
-    <div class="message-text">
-        Happy Birthday, my favorite person 💖<br><br>
-        You make my world brighter every single day,  
-        and I’m so lucky to have you in my life.  
-        I hope your day is as amazing as you are ❤️
-    </div>
+        <div class="message-text">
+            Happy Birthday, my Favorite Person 💖<br><br>
+            You are not just the person I care about- You're 
+            someone I can laugh endlessly with, share the weirdest
+            of thoughts with, and count on no matter what.
+            I love gossiping with you - the way you make even 
+            the silliest things so much fun. I’m really grateful 
+            for all the memories we’ve made and the countless 
+            ones yet to come.
+        </div>
 
-    <a href="{{ url_for('collage') }}" class="btn">A small surprise ➡</a>
-    <script>
-        const envelope = document.getElementById("envelope");
-        envelope.addEventListener("click", () => {
-            envelope.classList.toggle("open");
-        });
-    </script>
+        <a href="{{ url_for('collage') }}" class="btn">A Small Surprise ➡</a>
+        <script>
+            const envelope = document.getElementById("envelope");
+            envelope.addEventListener("click", () => {
+                envelope.classList.toggle("open");
+            });
+        </script>
 
     </body>
 </html>

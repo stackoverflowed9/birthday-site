@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Special Collage 💕</title>
+    <title>Your Special Collage &#128152;</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body class="collage-page">
-    <h1>Moments Where You Shine ✨</h1>
+    <h1 style="color: white">Moments Where You Shine &#128152;</h1>
 
     <div class="collage-container">
-        {% for i in range(1, 8) %}
+        {% for i in range(1, 9) %}
             <img src="{{ url_for('static', filename='images/img' ~ i ~ '.jpeg') }}" class="floating-img">
         {% endfor %}
     </div>
